@@ -234,10 +234,12 @@ Debe incluir los campos:
 - nombreCliente
 - fecha
 - hora
-- servicio
+- servicio: con una lista de selección con los posibles servicios que ofrecemos en nuestro sistema (recomienda algunos).
 
 Todos los campos son obligatorios.
 Al enviar el formulario, debe llamarse al método correspondiente del servicio.
+Si ocurre un error al guardar la reserva, muestra un componente tipo toast con el mensaje de error.
+
 ```
 
 ### 📘 Explicación del formulario
