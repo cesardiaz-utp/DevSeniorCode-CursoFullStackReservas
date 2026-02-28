@@ -16,6 +16,8 @@ El JDK proporciona las herramientas necesarias para compilar y ejecutar aplicaci
 
   Con este comando confirmas que el ejecutable se encuentra en el PATH y ves la versión instalada, lo cual es útil para asegurarte de que tienes la versión requerida.
 
+[![Instalación JDK 25](https://img.youtube.com/vi/awbUmArIDMg/sddefault.jpg)](https://youtu.be/awbUmArIDMg)
+
 ## 2. Node.js 24
 
 Node.js es un entorno de ejecución de JavaScript en el servidor que incluye `npm`, el gestor de paquetes. Es fundamental para el frontend porque nos permite instalar librerías de Angular, compilar el proyecto y lanzar el servidor de desarrollo con `ng serve`.
@@ -29,6 +31,8 @@ Node.js es un entorno de ejecución de JavaScript en el servidor que incluye `np
   ```
 
   Estos comandos te muestran las versiones instaladas; confirma que ambas herramientas están disponibles antes de avanzar.
+
+[![Instalación NodeJS 24](https://img.youtube.com/vi/mf9D-t8mlM4/sddefault.jpg)](https://youtu.be/mf9D-t8mlM4)
 
 ## 3. Git y GitHub
 
@@ -45,6 +49,8 @@ Git es el sistema de control de versiones que usamos para llevar un historial de
 
   También puedes configurar otros ajustes como el editor predeterminado o el formato de línea de finalización dependiendo de tu entorno.
 
+[![Git y Github](https://img.youtube.com/vi/-f_WEMKD0NI/sddefault.jpg)](https://youtu.be/-f_WEMKD0NI)
+
 ## 4. Postgresql
 
 PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto y potente. En este curso, lo utilizaremos para almacenar de forma persistente toda la información de nuestra aplicación (reservas, usuarios, productos, etc.), aprovechando su robustez y compatibilidad con Spring Data JPA.
@@ -58,6 +64,8 @@ PostgreSQL es un sistema de gestión de bases de datos relacionales de código a
 - **Herramienta de Administración (pgAdmin)**: El instalador suele incluir **pgAdmin**, una interfaz gráfica que te permitirá crear la base de datos `mi_basededatos` de forma visual antes de conectar la aplicación.
 - **Verificación**: Abre pgAdmin o utiliza la terminal (`psql -U postgres`) para confirmar que puedes acceder al servidor de base de datos.
 
+[![Instalación PostgreSQL 18](https://img.youtube.com/vi/l6fb-KINGiE/sddefault.jpg)](https://youtu.be/l6fb-KINGiE)
+
 ## 5. Cursor
 
 Cursor es un editor de código basado en VS Code que integra inteligencia artificial de forma nativa. Lo utilizaremos como nuestra herramienta principal de desarrollo para acelerar la escritura de código, realizar refactorizaciones inteligentes y resolver errores de manera eficiente tanto en el Backend como en el Frontend.
@@ -66,6 +74,8 @@ Cursor es un editor de código basado en VS Code que integra inteligencia artifi
 - **Instalación**: Ejecuta el instalador. Al ser un fork de VS Code, puedes importar todas tus extensiones, configuraciones y atajos de teclado existentes durante el primer inicio.
 - **Configuración de IA**: Al iniciar, Cursor te permitirá configurar el modelo de lenguaje (como Claude 3.5 Sonnet o GPT-4o). Asegúrate de loguearte para aprovechar las funciones de autocompletado predictivo (Tab) y el chat contextual (`Ctrl+L` o `Cmd+L`).
 - **Uso de Composer**: Familiarízate con la función Composer (`Ctrl+I` o `Cmd+I`), que permite generar cambios en múltiples archivos simultáneamente siguiendo instrucciones en lenguaje natural.
+
+[![Instalación Cursor](https://img.youtube.com/vi/h-BZL49qBh4/sddefault.jpg)](https://youtu.be/h-BZL49qBh4)
 
 ## 6. Extensiones necesarias
 
@@ -76,3 +86,8 @@ Para sacar el máximo partido a este curso, instala las siguientes extensiones e
 3. **Angular Language Service**: proporciona autocompletado, navegación y comprobaciones en tus archivos `.ts`, `.html` y `.css` de Angular.
 
 > 💡 Puedes instalar todas estas extensiones a la vez desde el marketplace de VS Code o mediante la paleta de comandos (`Ctrl+Shift+P`) con `Extensiones: Instalar extensiones` y buscando por nombre.
+
+[![Extensiones Cursor](https://img.youtube.com/vi/2Pq1nvrzatg/sddefault.jpg)](https://youtu.be/2Pq1nvrzatg)
+
+---
+_Con todas las herramientas instaladas y configuradas, ¡llegó el momento de empezar a construir nuestra aplicación!_

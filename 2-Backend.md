@@ -35,6 +35,8 @@ Para construir aplicaciones robustas, es fundamental seguir un modelo arquitect�
 
 Una aplicación empresarial suele dividirse en tres capas lógicas.
 
+![Aplicación empresarial con 3 capas](https://raw.githubusercontent.com/cesardiaz-utp/DevSenior-Java-2025/refs/heads/main/05/1/assets/ModeloCapasSpringBoot.png)
+
 1. **Capa de Presentación (Controller)**:
     - Es el punto de entrada de la aplicación. Su única responsabilidad es recibir las peticiones HTTP (GET, POST, etc.) del cliente y delegarlas a la capa de servicio. También se encarga de devolver una respuesta HTTP al cliente.
     - **No contiene lógica de negocio**. Piensa en el controlador como un simple "portero" que dirige el tráfico. Un ejemplo de su función es mapear una URL como `/api/productos` a un método específico, como `getAllProductos()`.
@@ -53,7 +55,11 @@ Ahora, pasaremos a la práctica. Crearemos una API REST para gestionar una entid
 ### Paso 0: Configuración de las reglas de Cursor
 
 ```plain
-Crea un archivo de reglas para cursor (mdc) llamado 'springboot' que siempre se aplique, con las buenas practicas de Java 25 en el desarrollo de un servicio en spring boot para que las aplique en el desarrollo del proyecto. Ten en cuenta que los nombres de clases, métodos y atributos deben ser en ingles. Cada método público debe tener su documentación Javadoc actualizada. Para los DTO usamos java records. Agrega la estructura de del proyecto dentro de las reglas.
+Crea un archivo de reglas para cursor (mdc) llamado 'springboot' que siempre se aplique, con las buenas practicas de Java 25 en el desarrollo de un servicio en spring boot para que las aplique en el desarrollo del proyecto.
+Ten en cuenta que los nombres de clases, métodos y atributos deben ser en ingles.
+Cada método público debe tener su documentación Javadoc actualizada.
+Para los DTO usamos java records.
+Agrega la estructura de del proyecto dentro de las reglas.
 
 ```
 
@@ -76,7 +82,10 @@ spring.jpa.show-sql=true
 
 **Prompt para IA**:
 
-> Crea la configuración para la conexión a la base de datos postgresql de nombre 'mi_basededatos' con el usuario 'mi_usuario' y contraseña 'mi_contraseña'. Habilita la actualización del esquema automático en hibernate e imprime las sentencias sql de JPA en consola.
+```plain
+Crea la configuración para la conexión a la base de datos postgresql de nombre 'reservation' con el usuario 'postgres' y contraseña '[contraseña_usada_en_instalacion]'.
+Habilita la actualización del esquema automático en hibernate e imprime las sentencias sql de JPA en consola.
+```
 
 ### Paso 2: Crear el Modelo (`Entity`)
 
@@ -273,3 +282,6 @@ Debe exponer los siguientes endpoints:
 
 Devuelve códigos de estado HTTP adecuados en cada caso.
 ```
+
+---
+_Con el backend ya en marcha y probándose sin problemas, es hora de dar el siguiente paso: poner manos a la obra con el frontend y comenzar a materializar la interfaz que interactuará con toda esa lógica. ¡Vamos a ello!_
